@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "detail": "md5=a8376d93596700913195f77d3bb15f82",
+      "name": "E1 generator determinism (seed=42, 400 sessions)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E2 dataset valid + fixture bytes match generator output",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E3 token verify: valid ok, tampered invalid",
+      "passed": true
+    },
+    {
+      "detail": "10 expired-attestation sessions",
+      "name": "E4 pinned: expired attestation -> challenge (never allow/block)",
+      "passed": true
+    },
+    {
+      "detail": "20 mimicking bots",
+      "name": "E5 pinned: human-timing mimic -> challenge + step-up fail",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E6 bad_bot allow == 0 and fraud_caught_rate == 1.0",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E7 per-class x per-action table exact",
+      "passed": true
+    },
+    {
+      "detail": "fp_agent=0.1833 fp_human=0.05 friction=0.1167",
+      "name": "E8 FP rates split by class + challenge friction",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E9 velocity-only valid agents still allowed",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E10 forged -> block, scope mismatch -> challenge",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E11 POC gates pass (check_dataset clean, CLI check exit 0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "E12 serve round-trip (/health, /report matches)",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": 12,
+    "total": 12
+  }
+}
